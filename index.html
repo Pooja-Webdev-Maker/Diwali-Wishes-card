@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Salsa&family=Style+Script&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="hero-section">
+        <img src="/image/design-5 1.png" alt="" class="jhalar">
+        <div class="paragraph-and-audio">
+            <p>Hi, <span id="receiver"></span>
+                <br>
+                You mean the world to me...
+                So this Diwali,
+                <br>
+                I made something for you!
+            </p>
+            <div class="audio-container">
+                <img src="/vector/Diwali Wishes (1)/Iconsax/Bold/Vector.svg" alt="">
+                <span class="soulful-music">&nbsp;&nbsp;Soulful Music&nbsp;&nbsp;</span>
+                <img src="/playing-music-icon/Group 5.svg" alt="" class="playing-music-icon">
+                <audio src="/Music/City of the Wolf - The Mini Vandals.mp3" controls></audio>
+
+            </div>
+        </div>
+        <img src="/image/deepak 1.png" alt="" class="first-deepak">
+        <img src="/image/deepak 1.png" alt="" class="second-deepak">
+    </section>
+    <section class="Laxmi-Ganesh-section">
+        <div class="horizental-divider">
+            <div class="horizental-line"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="horizental-line"></div>
+        </div>
+        <img src="/image/lakshmi maa and ganesh ji 1.png" alt="" class="laxmi-ganesh-img">
+        <h2>Wishing You a Blessed and Prosperous Deepawali</h2>
+
+        <div class="horizental-divider">
+            <div class="horizental-line"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="horizental-line"></div>
+        </div>
+        <div class="white-card-container">
+            <div class="white-card">
+                <p>People say, “Diwali is the festival of lights.”</p>
+                <p>You know what, I can feel the positivity and happiness. My goal is to learn web development and I’m
+                    learning everyday, even today!</p>
+            </div>
+            <img src="/image/little-girl 1.png" alt="" class="little-girl">
+
+        </div>
+        <div class="horizental-divider">
+            <div class="horizental-line"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="horizental-line"></div>
+        </div>
+        <div class="laxmi-ganesh-card">
+            <img src="/image/Group 1.png" alt="">
+        </div>
+        <div class="thank-you-text">
+            <p>Happy Diwali and, </p>
+            <h2>Thank You For Everything...</h2>
+        </div>
+        <p class="my-name">Made with 💜 By <span id="sender"></span></p>
+    </section>
+
+    <script>
+        const receiverName = document.querySelector("#receiver");
+        const senderName = document.querySelector("#sender");
+        receiverName.innerText = new URLSearchParams(location.search).get("receiver");
+        senderName.innerText = new URLSearchParams(location.search).get("sender") || 'Pooja';
+    </script>
+</body>
+
+</html>

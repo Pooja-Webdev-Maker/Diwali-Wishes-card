@@ -1,0 +1,234 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Salsa", cursive;
+}
+
+.hero-section {
+  /* min-height: 100vh; */
+  background-color: #F99501;
+  background-image: url('/image/orange-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.jhalar {
+  width: 245px;
+  margin-bottom: -80px;
+}
+
+.paragraph-and-audio {
+  margin-left: 15rem;
+}
+
+.hero-section p {
+  font-size: 35px;
+  max-width: 500px;
+}
+
+/* audio{
+  background-color: #FBD8A4;
+} */
+audio::-webkit-media-controls-panel {
+  background-color: #FBD8A4;
+
+}
+
+.audio-container {
+  background-color: #FBD8A4;
+  max-width: max-content;
+  /* max-width: content matlab jitna content hai utna hi width leta hai. */
+  border-radius: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+
+/* section 2 */
+.Laxmi-Ganesh-section {
+  padding-block: 1em;
+  padding-inline: 1em;
+}
+
+.laxmi-ganesh-img {
+  max-width: 900px;
+  width: 100%;
+  display: block;
+  /* margin: auto; */
+  margin-inline: auto;
+
+}
+
+.horizental-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 2em;
+}
+
+.horizental-line {
+  height: 2px;
+  width: 468px;
+  background-color: #FBD8A4;
+}
+
+.circle {
+  height: 10px;
+  width: 10px;
+  background-color: #FBD8A4;
+  border-radius: 50%;
+  flex-shrink: 0;
+  /* flex -shrink ka matlab wp apne parent ke hisab se shrink chota hota.flex shrink 0 karne par wo shrink nhi hoga */
+}
+
+.Laxmi-Ganesh-section {
+  background-color: #F99501;
+}
+
+.Laxmi-Ganesh-section h2 {
+  font-family: "Style Script", cursive;
+  text-align: center;
+  font-size: 70px;
+  font-weight: 400;
+}
+
+
+/* Section 3 */
+.white-card {
+  max-width: 560px;
+
+}
+
+.white-card p {
+  /* max-width: 855px; */
+  font-size: 30px;
+  padding: 4rem;
+  border-radius: 12px;
+  background-color: white;
+ 
+}
+
+p+p {
+  margin-top: -7rem;
+}
+
+.white-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.little-girl{
+  width: 260px;
+  margin-left: -80px;
+}
+ .laxmi-ganesh-card{
+  background-color: white;
+  border-radius: 12px;
+    padding: 2rem;
+    max-width: 1225px;
+    margin: auto;
+    
+ }
+ .laxmi-ganesh-card img{
+  width: 100%;
+ }
+ .thank-you-text p{
+  
+  margin-left: 40px;
+  
+ }
+ .thank-you-text h2{
+    text-align: left;
+    margin-top: 12px;
+ }
+ .my-name{
+  text-align: right;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media Query */
+/* @media (width <=830px){
+  .first-deepak{
+    display: none;
+  }
+} */
+/* the above meadia query journaly sab mobile me work nhi karta hai. */
+@media (max-width :830px) {
+  .first-deepak {
+    display: block;
+    margin-left: auto;
+  }
+
+  .second-deepak,
+  .soulful-music,
+  .playing-music-icon {
+    display: none;
+  }
+
+  .paragraph-and-audio {
+    margin-left: 1rem;
+  }
+
+  .jhalar {
+    margin-bottom: 0px;
+  }
+
+  .hero-section p {
+    font-size: 30px;
+    max-width: 400px;
+  }
+  .white-card p {
+    font-size: 1.5rem;
+    padding: 2rem;
+    padding-block: 1rem;
+    /* padding- block matalab hai ki padding top aur bottom dono ko 1 rem dega. */
+  }
+  p+p {
+  margin-top: -3rem;
+}
+  .little-girl{
+  width: 160px;
+ 
+}
+
+}
+
+@media (max-width :540px) {
+  .hero-section p {
+    font-size: 20px;
+  }
+
+  .first-deepak {
+    width: 100%;
+    /* width 100% matlab hai ki jitna bhi space hai utna hi lega. */
+  }
+  .Laxmi-Ganesh-section h2 {
+    font-size: 30px;
+
+    .laxmi-ganesh-card{
+      padding: 1rem;
+    }
+}
+
+
+
